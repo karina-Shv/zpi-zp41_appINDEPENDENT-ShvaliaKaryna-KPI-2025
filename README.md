@@ -1,0 +1,1 @@
+# zpi-zp41_appINDEPENDENT-ShvaliaKaryna-KPI-2025
