@@ -12,25 +12,25 @@
         p.error {
             color: red; /* Встановити червоний колір тексту */
         }    
-        a:link {
+        a:link { /* невідвідуване посилання */
         color: green;
         background-color: transparent;
         text-decoration: none;
         }
 
-        a:visited {
+        a:visited { /* відвідуване посилання */
         color: pink;
         background-color: transparent;
         text-decoration: none;
         }
 
-        a:hover {
+        a:hover { /* посилання при наведенні миші */
         color: red;
         background-color: transparent;
         text-decoration: underline;
         }
 
-        a:active {
+        a:active { /* активне посилання */
         color: yellow;
         background-color: transparent;
         text-decoration: underline;
@@ -134,6 +134,9 @@
         border-width: 25px 10px 4px 35px; /* 25 пікселів згори, 10 пікселів справа, 4 пікселі знизу і 35 пікселів зліва */
         }
     </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> <!-- гліфіконки Bootstrap -->
+    <script src="https://kit.fontawesome.com/a9a85e724e.js"></script> <!--Font Awesome -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> <!-- Google іконки -->
 </head>
 <body> <!-- відображає видимий зміст сторінки -->
     <h1>Мій перший заголовок</h1> 
@@ -537,6 +540,32 @@
     <p class="five">Просто текст.</p>
     <p class="six">Просто текст.</p>
     <p class="seven">Просто текст.</p>
+
+    <h3>Icons</h3>
+    <i class="fa-solid fa-user"></i>
+    <i class="fas fa-cloud"></i>
+    <i class="fas fa-heart"></i>
+    <i class="fas fa-car"></i>
+    <i class="fas fa-file"></i>
+    <i class="fas fa-bars"></i><br>
+
+    <h3>Bootstrap Icons</h3><!-- гліфіконки Bootstrap -->
+    <i class="glyphicon glyphicon-cloud"></i>
+    <i class="glyphicon glyphicon-remove"></i>
+    <i class="glyphicon glyphicon-user"></i>
+    <i class="glyphicon glyphicon-envelope"></i>
+    <i class="glyphicon glyphicon-thumbs-up"></i>
+
+    <h3>Google іконки</h3>
+    <i class="material-icons">cloud</i>
+    <i class="material-icons">favorite</i>
+    <i class="material-icons">attachment</i>
+    <i class="material-icons">computer</i>
+    <i class="material-icons">traffic</i>
+
+
+
+
 
 </body>
 </html>
