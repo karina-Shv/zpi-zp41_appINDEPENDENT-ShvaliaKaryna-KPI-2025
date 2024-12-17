@@ -282,13 +282,143 @@
         <br><br>
         <input type="submit" value="Submit">
     </form>
-    
+
     <h3>Радіо кнопки</h3>
     <form>
         <input type="radio" name="gender" value="male" checked> Чоловік<br>
         <input type="radio" name="gender" value="female"> Жінка<br>
-        <input type="radio" name="gender" value="other"> Інше
+        <input type="radio" name="gender" value="other"> Інше <!-- value задає початкове значення для поля введення -->
     </form>
+    <h3>Кнопки</h3>
+    <select name="cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+    </select><br><br><br>
+
+    <select name="cars" size="2">
+        <option value="volvo">Volvo</option>
+       <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+       <option value="audi">Audi</option>       
+       <option value="audi">FiatAudi</option>       
+       <option value="audi">SaabAudi</option>       
+       <option value="audi">VolvoAudi</option>
+      </select><br><br>
+
+      <select name="cars" size="4" multiple>
+        <option value="volvo">Volvo</option>
+       <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+       <option value="audi">Audi</option>
+      </select><br><br>
+
+    <textarea name="message" rows="10" cols="30" style="width:300px; height:70px;">
+        The cat was playing in the garden.
+    </textarea>
+
+    <button type="button" onclick="alert('Слава Україні!')">Тицни мене!</button>
+    <br><br>
+    <form>
+        Birthday:
+         <input type="date" name="bday">
+    </form><br>
+
+    <form>
+        Оберіть ваш улюблений колір:
+         <input type="color" name="favcolor">
+    </form><br>
+
+    <form>
+        Введіть дату до 1980-01-01:
+        <input type="date" name="bday" max="1979-12-31"><br><br>
+        Введіть дату після 2000-01-01:
+        <input type="date" name="bday" min="2000-01-02"><br>
+    </form><br>
+
+    <form>
+        Birthday (date and time):
+         <input type="datetime-local" name="bdaytime">
+    </form><br>
+
+    <form>
+        E-mail:
+         <input type="email" name="email">
+    </form><br>
+
+    <form>
+        Оберіть файл: <input type="file" name="myFile">
+    </form><br>
+
+    <form>
+        Birthday (month and year):
+         <input type="month" name="bdaymonth">
+    </form><br>
+
+    <form>
+        Quantity (between 1 and 5):
+        <input type="number" name="quantity" min="1" max="5">
+    </form><br>
+
+    <form>
+        Quantity:
+       <input type="number" name="points"min="0" max="100" step="5" value="30">
+    </form><br>
+
+    <form>
+        <input type="range" name="points" min="0" max="10">
+    </form><br>
+
+    <form>
+        Пошук Google:
+         <input type="search" name="googlesearch">
+    </form><br>
+
+    <form>
+        Телефон:
+        <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+        <input type="submit"><br>
+        <span>Формат: 123-45-678</span>
+    </form><br>
+
+    <form>
+        Обрати час:
+         <input type="time" name="usr_time">
+    </form><br>
+
+    <form>
+        Додайте вашу домашню сторінку:
+         <input type="url" name="homepage">
+    </form><br>
+
+    <form>
+        Оберіть тиждень:
+         <input type="week" name="week_year">
+    </form><br>
+
+    <form action="">
+        Ім’я незмінне:<br>
+         <input type="text" name="firstname" value="John" readonly>
+    </form><br>
+
+    <form action="">
+        Ім’я:<br>
+        <input type="text" name="firstname" value="John" disabled><br>
+        Прізвище:<br>
+        <input type="text" name="lastname">
+    </form><br>
+
+    <form action="">
+        Ім’я:<br>
+        <input type="text" name="firstname" value="John" maxlength="15"><br>
+        Прізвище:<br>
+        <input type="text" name="lastname">
+    </form><br>
+
+
+
+
 
 
 
