@@ -1,10 +1,10 @@
 <!DOCTYPE html> <!-- визначає цей документ як HTML5 -->
 <html lang="en"> <!-- є кореневим елементом HTML сторінки -->
 <head> <!-- містить метаінформацію про HTML документ -->
-    <meta charset="UTF-8"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Назва сторінки</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Назва сторінки</title>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
     <style>
         #p01 {
           color: blue;
@@ -409,20 +409,38 @@
         <input type="text" name="lastname">
     </form><br>
 
-    <form action="">
+    <form>
+        <input type="text" name="fname" placeholder="Ім’я"><br>
+        <input type="text" name="lname" placeholder="Прізвище"><br>
+        <input type="submit" value="Відправити">
+      </form><br>
+
+    <form>
         Ім’я:<br>
         <input type="text" name="firstname" value="John" maxlength="15"><br>
         Прізвище:<br>
         <input type="text" name="lastname">
     </form><br>
 
+    <h2>Атрибут autocomplete</h2>
+    <form autocomplete="on">
+      Ім'я:<input type="text" name="fname"><br>
+      Прізвище: <input type="text" name="lname"><br>
+      E-mail: <input type="email" name="email" autocomplete="off"><br>
+      <input type="submit">
+    </form><br>
 
+    <h2>Атрибут pattern</h2>
+    <h3>Трилітерний код країни</h3>
+    <form>
+        Код країни: <input type="text" name="country_code" pattern="[A-Za-z]{3}" title="Трилітерний код країни">
+        <input type="submit">
+    </form><br>
 
-
-
-
-
-
+    <form>
+        Ім'я користувача: <input type="text" name="usrname" required>
+        <input type="submit">
+    </form>
 
 </body>
 </html>
