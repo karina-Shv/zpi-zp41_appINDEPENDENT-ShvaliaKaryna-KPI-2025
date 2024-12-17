@@ -7,10 +7,10 @@
 <link rel="icon" type="image/x-icon" href="favicon.ico">
     <style>
         #p01 {
-          color: blue;
+          color: blue; 
         }
         p.error {
-            color: red; 
+            color: red; /* Встановити червоний колір тексту */
         }    
         a:link {
         color: green;
@@ -74,6 +74,64 @@
         li #touch:hover {
         background-color: #483333;        
         color:white;
+        }
+        div {
+        background-color: green;
+        }
+        div.first {
+        opacity: 0.1;
+        }
+        div.second {
+        opacity: 0.3;
+        }
+        div.third {
+        opacity: 0.6;
+        }
+        p.dotted {border-style: dotted; margin-top: 10px;}
+        p.dashed {border-style: dashed;}
+        p.solid {border-style: solid;}
+        p.double {border-style: double;}
+        p.groove {border-style: groove;}
+        p.ridge {border-style: ridge;}
+        p.inset {border-style: inset;}
+        p.outset {border-style: outset;}
+        p.none {border-style: none;}
+        p.hidden {border-style: hidden;}
+        p.mix {border-style: dotted dashed solid double;}
+        p.one {
+        border-style: solid;
+        border-width: 5px;
+        }
+
+        p.two {
+        border-style: solid;
+        border-width: medium;
+        }
+
+        p.three {
+        border-style: dotted;
+        border-width: 2px;
+        }
+
+        p.four {
+        border-style: dotted;
+        border-width: thick;
+        }
+
+        p.five {
+        border-style: double;
+        border-width: 15px;
+        }
+
+        p.six {
+        border-style: double;
+        border-width: thick;
+        }
+
+        p.seven {
+        border-style: solid;
+        border-color: red green blue yellow;
+        border-width: 25px 10px 4px 35px; /* 25 пікселів згори, 10 пікселів справа, 4 пікселі знизу і 35 пікселів зліва */
         }
     </style>
 </head>
@@ -441,6 +499,44 @@
         Ім'я користувача: <input type="text" name="usrname" required>
         <input type="submit">
     </form>
+
+    <div class="first">
+        <h1>opacity 0.1</h1>
+    </div>
+      
+    <div class="second">
+        <h1>opacity 0.3</h1>
+    </div>
+      
+    <div class="third">
+        <h1>opacity 0.6</h1>
+    </div>
+      
+    <div>
+        <h1>opacity 1 (по умолчанию)</h1>
+    </div>
+
+    <h2>Властивість border-style</h2>     
+    <p class="dotted">Точечная граница.</p>
+    <p class="dashed">Пунктирная граница.</p>
+    <p class="solid">Сплошная граница.</p>
+    <p class="double">Двойная граница.</p>
+    <p class="groove">Рифлёная граница.</p>
+    <p class="ridge">Ребристая граница.</p>
+    <p class="inset">Вставная граница.</p>
+    <p class="outset">Выпуклая граница.</p>
+    <p class="none">Нет границы.</p>
+    <p class="hidden">Скрытая граница.</p>
+    <p class="mix">Смешанная граница.</p>
+
+    <h2>Властивість border-width</h2>
+    <p class="one">Просто текст.</p>
+    <p class="two">Просто текст.</p>
+    <p class="three">Просто текст.</p>
+    <p class="four">Просто текст.</p>
+    <p class="five">Просто текст.</p>
+    <p class="six">Просто текст.</p>
+    <p class="seven">Просто текст.</p>
 
 </body>
 </html>
