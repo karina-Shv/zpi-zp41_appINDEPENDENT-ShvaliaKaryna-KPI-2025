@@ -4,6 +4,7 @@
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Назва сторінки</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <style>
         #p01 {
           color: blue;
@@ -34,6 +35,46 @@
         background-color: transparent;
         text-decoration: underline;
         }   
+        table, th, td { 
+        border: 1px solid black;
+        padding: 5px;
+        text-align: left;   
+        border-style: solid;  
+        border-color: blue;   
+        }
+        table{
+        border-spacing: 5px;  
+        border-radius: 8px;                  
+        }
+        th{            
+        background-color: #96D4D4;
+        text-align: center;        
+        }
+        tr:nth-child(odd){
+        background-color: rgba(100, 154, 248, 0.5)
+        }
+        tr:hover {background-color: #f1ea5e;}
+        #menu {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #815252;
+        }
+        #button{
+        float: left;
+        }        
+        li #touch {
+        display: block;
+        color: rgb(241, 200, 200);
+        text-align: center;
+        padding: 16px;
+        text-decoration: none;
+        }        
+        li #touch:hover {
+        background-color: #483333;        
+        color:white;
+        }
     </style>
 </head>
 <body> <!-- відображає видимий зміст сторінки -->
@@ -133,16 +174,109 @@
     <p>На зображенні нижче є посилання</p>
     <a href="https://www.w3schools.com/html/" target="_blank"><img src="IconDone.png" alt="HTML підручник" style="width:42px;height:42px;"></a><br>
     <a href="https://www.w3schools.com/html/" title="Перейти на уроки по HTML для початківців">Уроки по HTML для початківців</a><br>
-     <!-- title - підказка - навести мишу -->
+    <!-- title - підказка - навести мишу -->
     <a href="#C4">Перейти до розділу 4</a> <!-- посилання на закладку -->
     <img src="IconDone.png" alt="HTML підручник" style="float:right; width:42px;height:42px;">
 
+    <div style="background-image: url('Cat.jpg'); background-repeat: no-repeat; background-size: 100% 100%;">
+        Ви можете вказати фонові зображення<br>
+        для будь-якого видимого елементу HTML.<br>
+        В цьому прикладі фонове зображення<br>
+        вказане для елемента div.<br>
+        За замовчуванням фонове зображення<br>
+        повториться в напрямку (ах)<br>
+        де воно менше елемента,<br>
+        в якому вказане.
+    </div>
+    <!-- зміна картинок в залежності від розміру -->
+    <picture>
+        <source media="(min-width: 1000px)" srcset="PushCat1.png">
+        <source media="(min-width: 465px)" srcset="PushCat2.jpg">
+        <img src="Cat.jpg" style="width:auto;">
+    </picture>
+    <table style="width:100%"> <!-- табличка -->
+        <caption>Працівники</caption>
+        <tr>
+          <th style="width:40%; height:35px">Ім'я</th><!-- заголовки -->
+          <th style="width:40%">Прізвище</th>
+          <th style="width:15%">Вік</th>
+        </tr>
+        <tr> <!-- рядок -->
+          <td>Пітер</td> <!-- клітинка, стовпець -->
+          <td>Паркер</td>
+          <td>17</td>
+        </tr>
+        <tr>
+          <td>Том</td>
+          <td>Холанд</td>
+          <td>28</td>
+        </tr>
+        <tr>
+          <td>Тобі</td>
+          <td>Магвайр</td>
+          <td>49</td>
+        </tr>
+        <tr>
+          <td>Ендрю</td>
+          <td>Гарфілд</td>
+          <td>41</td>
+        </tr>
+    </table>
+    <ul style="list-style-type:square;">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+    <ol type="1">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+    <ol type="1"; start="50">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+    <ol type="A">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+    <ol type="I">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+    <dl>
+        <dt>Кава</dt>
+        <dd>- чорний гарячий напій</dd>
+        <dt>Молоко</dt>
+        <dd>- білий холодний напій</dd>
+      </dl>
+    <h3>Вкладені списки</h3>
+    <ul>
+        <li>Кава</li>
+        <li>Чай
+          <ul>
+            <li>Чорний чай</li>
+            <li>Зелений чай</li>
+          </ul>
+        </li>
+        <li>Молоко</li>
+    </ul>
+
+    <h3>MENU</h3>
+    <ul id="menu">
+      <li id="button"><a id="touch" href="#home">Home</a></li>
+      <li id="button"><a id="touch" href="#news">News</a></li>
+      <li id="button"><a id="touch" href="#contact">Contact</a></li>
+      <li id="button"><a id="touch" href="#about">About</a></li>
+    </ul>
+    
 
 
 
 
-
-
-
+    
 </body>
 </html>
