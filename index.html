@@ -330,6 +330,18 @@
         .dropdown:hover .dropbtn {
         background-color: #3e8e41;
         }
+        #divTransition{
+        width: 100px;
+        height: 100px;
+        background: red;
+        /*-webkit-transition: width 2s;*/ /* Для Safari 3.1 to 6.0 */
+        transition: width 2s, height 4s, transform 2s;
+        }
+        #divTransition:hover{
+        width: 300px;
+        height: 300px;
+        transform: rotate(180deg);
+        }
     </style>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">
@@ -1158,9 +1170,12 @@
           <a href="#">Посилання 2</a>
           <a href="#">Посилання 3</a>
         </div>
-      </div><br><br><br><br>
+    </div><br><br><br><br>
 
-
+    <h1>Свойство transition</h1>
+    <p>Наведите указатель мыши на элемент div ниже, чтобы увидеть эффект перехода:</p>
+    <div id="divTransition";>
+    </div><br><br><br><br><br><br>
 
 </body>
 </html>
