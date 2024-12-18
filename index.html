@@ -1084,8 +1084,31 @@
     <div class="test" style="text-overflow:ellipsis; background-color: rgb(255, 255, 255);">This is some long text that will not fit in the box</div>
     <br>
     <div class="test" style="text-overflow:clip;background-color: rgb(255, 255, 255);">This is some long text that will not fit in the box</div>
-    
-   
+    <br>
+
+    <div style="width: 300px;
+    height: 100px;
+    padding: 15px;
+    background-color: coral;
+    box-shadow: 10px 10px 5px 12px lightblue;"> <!-- 5px розмиття 12px радіус поширення тіні-->
+    This is a div element with a box-shadow</div><br><br>
+
+    <div style="width: 300px;
+    height: 100px;
+    padding: 15px;
+    background-color: coral;
+    box-shadow: 10px 10px 5px lightblue inset;"> <!-- inset змінює тінь від зовнішня тінь (початок) до внутрішньої тіні -->
+    This is a div element with a box-shadow</div><br><br>
+
+    <div style="width: 300px;
+    height: 100px;
+    padding: 15px;
+    background-color: coral;
+    box-shadow: 5px 5px 8px blue, 10px 10px 8px red, 15px 15px 8px green;"> <!-- кілька тіней -->
+    This is a div element with a box-shadow</div><br><br>
+
+
+
 
 
 </body>
