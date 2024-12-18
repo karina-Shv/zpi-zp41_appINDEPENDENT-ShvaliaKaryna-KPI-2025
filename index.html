@@ -297,7 +297,39 @@
         overflow: visible;
         }
 
+        .dropdown {
+        position: relative;
+        display: inline-block;
+        }
 
+        .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+        z-index: 1;
+        }
+        /* Показати випадаюче меню при наведенні */
+        .dropdown:hover .dropdown-content {
+        display: block;
+        }
+        /* Посилання всередині випадаючого списку */
+        .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        }
+
+        /* Змінити колір випадаючих посилань при наведенні */
+        .dropdown-content a:hover {background-color: #f1f1f1}
+
+        /* Змінити колір фону кнопки випадаючого списку, коли відображається зміст випадаючого списку. */
+        .dropdown:hover .dropbtn {
+        background-color: #3e8e41;
+        }
     </style>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">
@@ -1108,6 +1140,25 @@
     This is a div element with a box-shadow</div><br><br>
 
 
+    <div class="dropdown"; style="background-color: rgb(255, 255, 255);">
+        <span>Наведите на меня курсор</span>
+        <div class="dropdown-content">
+        <p>Hello World!</p>
+        <p>Hello!</p>
+        <p>!</p>
+        </div>
+    </div><br><br>
+
+    <h2>Випадаюче меню</h2>
+    <p>випадаюче меню, яке дозволяє користувачу обрати опцію зі списку</p>
+    <div class="dropdown">
+        <button class="dropbtn">Випадаюче меню</button>
+        <div class="dropdown-content">
+          <a href="#">Посилання 1</a>
+          <a href="#">Посилання 2</a>
+          <a href="#">Посилання 3</a>
+        </div>
+      </div><br><br><br><br>
 
 
 
