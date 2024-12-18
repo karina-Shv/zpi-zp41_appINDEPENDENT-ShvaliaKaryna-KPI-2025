@@ -162,6 +162,27 @@
         p.capitalize {
         text-transform: capitalize;
         }
+        @keyframes example {
+        from {background-color: red;}
+        to {background-color: yellow;}
+        }
+        @keyframes example2 {
+        0%   {background-color: red;}
+        25%  {background-color: yellow;}
+        50%  {background-color: blue;}
+        100% {background-color: green;}
+        }
+        @keyframes example3 {
+        0%   {background-color:red; left:0px; top:0px;}
+        25%  {background-color:yellow; left:200px; top:0px;}
+        50%  {background-color:blue; left:200px; top:200px;}
+        75%  {background-color:green; left:0px; top:200px;}
+        100% {background-color:red; left:0px; top:0px;}
+        }
+        @keyframes mymove {
+        from {left: 0;}
+        to {left: 1000px;}
+        }
 
     </style>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
@@ -815,6 +836,107 @@
     <h1 class="font-effect-outline">Мій перший заголовок and some words in english</h1>
     <h1 class="font-effect-emboss">Мій перший заголовок and some words in english</h1>
     <h1 class="font-effect-shadow-multiple">Мій перший заголовок and some words in english</h1>
+
+    <!-- Закруглені кути -->
+    <p style="background: #73AD21;
+    padding: 20px;
+    width: 200px;
+    height: 150px; 
+    border-radius: 15px 50px 30px 5px;">
+    Закруглені кути!</p>
+
+    <p style="border: 10px solid transparent;
+    padding: 15px;
+    border-image: url(border.png) 30 round;">
+    border-image: url(border.png) 30 round;</p>
+    <p style="border: 10px solid transparent;
+    padding: 15px;
+    border-image: url(border.png) 30 stretch;">
+    border-image: url(border.png) 30 stretch;</p>
+    <p style="border: 10px solid transparent;
+    padding: 15px;
+    border-image: url(border.png) 30% round;">
+    border-image: url(border.png) 30% round;</p>
+    <p style="border: 10px solid transparent;
+    padding: 15px;
+    border-image: url(border.png) 50% round;">
+    border-image: url(border.png) 50% round;</p>
+    
+
+
+    <div style="width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;"></div><br><br>
+
+    <div style="width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: example2;
+    animation-duration: 4s;
+    animation-iteration-count: 10;"></div><br><br>
+
+    <div style=" width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: red;
+    animation-name: example3;
+    animation-duration: 4s;
+    animation-delay: 5s;
+    animation-iteration-count: 10;
+    animation-direction: alternate;"></div><br><br>
+
+    <div style="width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;"></div><br><br>
+
+    <div style="width: 100px;
+    height: 50px;
+    background-color: red;
+    font-weight: bold;
+    position: relative;
+    animation: mymove 5s infinite;
+    animation-timing-function: linear;">linear</div>
+    <div style="width: 100px;
+    height: 50px;
+    background-color: red;
+    font-weight: bold;
+    position: relative;
+    animation: mymove 5s infinite;
+    animation-timing-function: ease;">ease</div>
+    <div style="width: 100px;
+    height: 50px;
+    background-color: red;
+    font-weight: bold;
+    position: relative;
+    animation: mymove 5s infinite;
+    animation-timing-function: ease-in;">ease-in</div>
+    <div style="width: 100px;
+    height: 50px;
+    background-color: red;
+    font-weight: bold;
+    position: relative;
+    animation: mymove 5s infinite;
+    animation-timing-function: ease-out;">ease-out</div>
+    <div style="width: 100px;
+    height: 50px;
+    background-color: red;
+    font-weight: bold;
+    position: relative;
+    animation: mymove 5s infinite;
+    animation-timing-function: ease-in-out;">ease-in-out</div>
+
+
+
+
+
+
 
 </body>
 </html>
